@@ -6,15 +6,8 @@ import { useSelector, useDispatch } from "react-redux";
 
 import { connect } from "react-redux";
 import { getJobsAction } from "../redux/actions";
-/* const mapStateToProps = (state) => ({
-  jobsInStock: state.jobs.jobsArray,
-}); */
-/* const mapDispatchToProps = (dispatch) => ({
-  fetchJobs: () => {
-    dispatch(getJobsAction());
-  },
-}); */
-const Home = (/* { fetchJobs, jobsInStock } */) => {
+
+const Home = () => {
   const jobsInStock = useSelector((state) => state.jobs.jobsArray);
   const dispatch = useDispatch();
 
